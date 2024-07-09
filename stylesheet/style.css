@@ -1,14 +1,18 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
 
-header{
-    width: 20%;
+header, .center, .profile, p, a, img, footer {
+    transition: 0.3s;
+}
+
+header {
+    width: 60%;
     margin: 10px;
     padding: 10px;
-    font-family:monospace;
+    font-family: monospace;
     color: #555555;
     border-radius: 30px;
     text-align: center;
@@ -16,55 +20,194 @@ header{
     background-color: #f9f9f9;
 }
 
-.center{
-    width: 35%;
-    height: 30%;
+.center {
+    width: 60%;
+    min-width: 180px;
+    max-width: 200px;
+
+    height: 36vh;
+    min-height: 200px;
+    max-width: 220px;
+
     border-radius: 18px;
     box-shadow: 0 0 10px gainsboro;
-    padding: 2%;
+
+    padding: 10% 5% 0 5%;
+
     text-align: center;
+
     position: relative;
     top: 20vh;
-    left: 30vw;
+    left: 15vw;
     background-color: #f9f9f9;
 
 }
 
-.profile{
-    width: 30%;
+.profile {
+    width: 50%;
     border-radius: 50%;
     box-shadow: 0 0 10px gainsboro;
 }
 
-p, a{
+p, a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a{
-    border-radius: 50%;
-    margin-left: 10px;
+a {
+    margin-right: 10px;
 }
 
-a img{
+a:last-child {
+    margin-right: 0;
+}
+
+a img {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
     transition: 0.3s;
     position: relative;
+    padding: 5px;
 }
 
 a:hover img{
     transition: 0.3s;
-    width: 33px;
-    height: 33px;
+    background-color: #999999;
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 10px;
     margin: 10px;
     color: #999999;
-    font-family:monospace;
+    font-family: monospace;
+}
+
+@media screen and (min-width: 320px) {
+    header {
+        width: 50%;
+    }
+
+    .center {
+        width: 55%;
+        min-width: none;
+        max-width: none;
+
+        height: 38vh;
+        min-height: none;
+        max-height: none;
+
+        top: 16vh;
+        left: 18vw;
+    }
+
+    .profile {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    header {
+        width: 45%;
+    }
+
+    .center {
+        width: 50%;
+        height: 40vh;
+
+        top: 18vh;
+        left: 20vw;
+    }
+
+    .profile {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    header {
+        width: 40%;
+    }
+
+    .center {
+        width: 48%;
+        min-height: 220px;
+
+        left: 24vw;
+
+        padding: 5% 2% 0 2%;
+    }
+
+    .profile {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    header {
+        width: 35%;
+        margin: 15px;
+    }
+    .center {
+        padding: 4% 2% 0 2%;
+    }
+
+    .profile {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        margin: 20px;
+    }
+
+    .center {
+        min-height: 240px;
+
+        top: 14vh;
+    }
+
+}
+
+@media screen and (min-width: 880px) {
+    .center {
+        min-height: 250px;
+        padding: 3% 2% 0 2%;
+    }
+
+    .profile {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .center {
+        min-height: 260px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .center {
+        min-height: 270px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .center {
+        min-height: 285px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .center {
+        min-height: 310px;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .center {
+        min-height: 340px;
+    }
 }
